@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Rohan landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Rohan Sakpal Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap +  main styles -->
+    <link rel="stylesheet" href="assets/css/Rohansakpal.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Portfolio</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#certifications">Certifications</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#skills">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#projects">Projects</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Hello!</span>
+                <span class="down">I am Rohan Sakpal</span>
+            </h1>
+            <!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Fresher  ',
+						'Frontend Developer  ',
+						'Web Developer   ',
+						'Web Designer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+
+            <p><a href="https://github.com/RohanSakpal020" class="btn btn-primary">Visit My Works</a></p>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/rohan photo.png" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Rohansakpal Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        I'm an aspiring software developer eager to dive into the exciting world of coding and innovation. Through my portfolio, I aim to showcase my journey of growth and learning in the field. But I'm here to learn from you too! Are you a fellow enthusiast just starting out, or perhaps seeking insights into specific programming languages or projects? Your input will shape our conversation, so please, let me know how I can assist you best on this exciting journey!
+
+I am pursuing Master's of Computer Application ( MCA ) from Dr. D. Y. Patil Institute of Master's of Computer Application and Management, Akurdi. Recently, I completed Bachelor Degree in Computer Applications (BBA(CA)) from Savitribai Phule Pune University.
+                    </p>
+                    <p><a href="https://drive.google.com/file/d/1Pk_89GxYmgg05KDlVoS988LSgiRAoV7I/view?usp=sharing" class="btn btn-primary">Download CV</a></p>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="certifications">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Certifications</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/responsive.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, awo Landing page"
+                                class="icon">
+                            <h6 class="title">The Fundamentals Of Digital Marketing</h6>
+
+                            <p class="subtitle">
+                                
+                                I have completed my certification from <B>Google Digital Garage</B>.In this i have skilled up with the digital marketing techniques.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/analytics.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Rohansakpal Landing page"
+                                class="icon">
+                            <h6 class="title">AWS Technical Essentials</h6>
+                            <p class="subtitle">I have completed my certification from <B>Data Tech Labs</B>.In this i have skilled up with the knowledge to accelerate cloud adoption and meet organizational goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/responsive.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Rohansakpal Landing page"
+                                class="icon">
+                            <h6 class="title">CPP</h6>
+                            <p class="subtitle">I have completed my certification from <B>IIT Bombay</B>.In this i have skilled up with the knowledge of C++ programming language.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/responsive.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Rohansakpal Landing page"
+                                class="icon">
+                            <h6 class="title">HTML</h6>
+                            <p class="subtitle">I have completed my certification from <B>IIT Bombay</B>.In this i have skilled up with the knowledge of HTML programming language.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="skills">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Know ?</p>
+            <h6 class="section-title mb-6">Skills</h6>
+            <!-- row -->
+            <div class="skill-mf">
+                
+                <span>HTML</span> <span class="pull-right">90%</span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                
+                <span>CSS</span> <span class="pull-right">85%</span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                
+                <span>SQL</span> <span class="pull-right">80%</span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                
+                <span>Javascript</span> <span class="pull-right">80%</span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                
+                <span>Java</span> <span class="pull-right">75%</span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section> <!-- end of portfolio section -->
+
+    <!-- pricing section -->
+    <section class="section" id="projects">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Projects</h6>
+            <!-- row -->
+            <div class="pricing-wrapper">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/scooter.svg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates,  Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Click N Go vehicle</h6>
+                        <div class="pricing-card-list">
+                            <p> The project's goal is to automate vehicle rental and reservation so that clients don't have to waste 
+time calling and waiting for a vehicle. To convert the manual car rental procedure into a digital method. </p>
+                        </div>
+                    </div>
+                    
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/shipped.svg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates,  Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">The Emporium </h6>
+                        <div class="pricing-card-list">
+                            <p>The Dairy Product Management System is a Python-based project aimed at managing and tracking 
+                                various dairy products within a dairy farm or processing facility. The system enables efficient handling of 
+                                dairy product inventory, sales, and customer management.</p>
+                        </div>
+                    </div>
+                    
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/startup.svg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Compuspace</h6>
+                        <div class="pricing-card-list">
+                            <p>Compuspace involves the buying and selling of goods and services over the internet, providing a 
+                                convenient and efficient platform for businesses and consumers to interact.</p>
+                        </div>
+                    </div>
+                    
+
+            </div><!-- end of pricing wrapper -->
+        </div> <!-- end of container -->
+    </section><!-- end of pricing section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <div class="row d-flex contact-info mb-5">
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-map-signs"></span>
+                        </div>
+                        <h5 class="mb-4">Address</h5>
+                      <p>Pune, India</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-phone2"></span>
+                        </div>
+                        <h5 class="mb-4">Contact Number</h5>
+                      <p><a href="tel://0101010101">+91 9284074470</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-paper-plane"></span>
+                        </div>
+                        <h5 class="mb-4">Email Address</h5>
+                      <p><a href="mailto:rohansakpal020@gmail.com">rohansakpal020@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-paper-plane"></span>
+                        </div>
+                        <h5 class="mb-4">linkedin</h5>
+                      <p><a href="visitto:https://www.linkedin.com/in/rohan-sakpal-1a9786251/">https://www.linkedin.com/in/rohan-sakpal-1a9786251/</a></p>
+                    </div>
+                </div>
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; 
+                Rohan Sakpal
+                    
+            </p>
+            
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!--  js -->
+    <script src="assets/js/Rohansakpal.js"></script>
+
+</body>
+
+</html>
